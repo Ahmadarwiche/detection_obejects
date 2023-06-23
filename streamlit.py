@@ -13,7 +13,7 @@ def main():
     st.title("🪴")
 
     # Add file uploader
-    file = st.file_uploader("Upload Image or Video to diagnostic your plant", type=["jpg", "jpeg", "png", "mp4"])
+    file = st.file_uploader("Upload an image or video to diagnose your plant", type=["jpg", "jpeg", "png", "mp4"])
 
     if file is not None:
         if file.type.startswith('image'):
